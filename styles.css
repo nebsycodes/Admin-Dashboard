@@ -1,0 +1,96 @@
+/* SCSS HEX 
+--jet: #333333;
+--dark purple #71539C;
+--amesythz #9172C2;
+--rose-quartz: #bb9aaaff;
+--lavender-web: #5f1469; */
+
+
+body {
+    background-color: #ded4e8;
+    color: #5f1469;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {  display: grid;
+    grid-template-columns: 0fr 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Dashboardmenu TopBar"
+      ". Dashboardmenu Content"
+      ". Dashboardmenu Content";
+  }
+  
+  .Dashboardmenu { 
+    grid-area: Dashboardmenu;
+    }
+  
+.TopBar {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "TC1 TC1 TC2"
+          "TC1 TC1 TC2"
+          "TC1 TC1 TC2"; 
+        grid-area: TopBar;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgb(178, 159, 195)
+    }
+    .TC1 { 
+        grid-area: TC1; 
+    }
+    .TC2 { 
+        grid-area: TC2; 
+    }
+  
+  .Content {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Column1 Column1 Column2"
+      "Column1 Column1 Column2"
+      "Column1 Column1 Column2o5";
+    grid-area: Content;
+    width: 100%;
+  }
+  
+  .Column1 { 
+    grid-area: Column1; 
+    text-align: center;
+  }
+  
+  .Column2 { 
+    grid-area: Column2; 
+    text-align: center
+  }
+  
+  .Column2o5 { 
+    grid-area: Column2o5; 
+  }
+  
+
+  button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #9172C2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 10%;
+    justify-content: left;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #71539C; 
+}
